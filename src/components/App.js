@@ -13,7 +13,8 @@ function App() {
   const [selectedCategory, setSelectedCategory] = React.useState("All");
 
   function handleDeleteTask(taskText){
-    setTasks(tasks.filter((task) => task.text !== taskText));
+
+    setTasks(tasks.filter(task => task.text !== taskText));
   }
   function handleAddTask(newTask){
     setTasks([...tasks, newTask]);
